@@ -22,19 +22,20 @@ export default class Helper {}
 import CustomName from 'module-name';
 
 const a = new CustomName();
-
+```
 ### `Named Export`
 
 When using `named exports`, you must import using the exact same name used in the declaration.
 
 **Example:**
+```js
 // module.js
 export class Helper {}
 export class Logger {}
 
 // anotherFile.js
 import { Helper, Logger } from 'module-name';
-
+```
 ### `CommonJS vs. ES Modules`
 
 🔗 [Understanding CommonJS vs. ES Modules in JavaScript](https://www.syncfusion.com/blogs/post/js-commonjs-vs-es-modules)
@@ -60,3 +61,8 @@ export function log(message) {
     console.log(`${timestamp}: ${message}`);
 }
 ```
+
+### `URL Path versioning, Hearder Versioning`
+for API update.
+
+
