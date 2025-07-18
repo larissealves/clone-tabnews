@@ -1,0 +1,5 @@
+npm run db-exec
+
+npm run test-jest:watch
+
+npm run dev

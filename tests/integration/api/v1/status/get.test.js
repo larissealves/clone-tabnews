@@ -1,1 +1,3 @@
-TextDecoderStream("get to /api/v1/status should return 200", () => {})
+test("get to /api/v1/status should return 200", () => {
+
+})
