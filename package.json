@@ -7,7 +7,9 @@
     "dev": "npm run test-jest:watch && next dev && db-exec",
     "test-jest": "jest",
     "test-jest:watch": "jest --watchAll",
-    "db-exec": "nodemon infra/lib/db.js"
+    "db-exec": "nodemon infra/lib/db.js",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "author": "Larisse Rodrigues Alves",
   "license": "MIT",
@@ -21,6 +23,7 @@
   },
   "devDependencies": {
     "jest": "^29.6.2",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
   }
 }
