@@ -1,15 +1,15 @@
-// lib/db.js
-require('dotenv').config();
+import { Client } from "pg";
 
-const { Client } = require('pg');
+async function query(queryObject) {
+  const client = new Client({
+    connectionString: process.env.DATABASE_URL,
+  });
+  await client.connect();
+  const result = await client.query(queryObject);
+  await client.end();
+  return result; 
+}
 
-const client = new Client({
-  connectionString: process.env.DATABASE_URL,
-  ssl: { rejectUnauthorized: false }, // Neon usa SSL
-});
-
-client.connect()
-  .then(() => console.log('📡 Conectado ao PostgreSQL (Neon)'))
-  .catch(err => console.error('❌ Erro ao conectar ao banco:', err));
-
-module.exports = client;
+export default {
+  query : query,
+};

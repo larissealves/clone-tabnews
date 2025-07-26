@@ -1,8 +1,12 @@
-import database from '../../../../infra/lib/db.js';
+import { Result } from 'pg';
+import database from 'infra/lib/db.js';
 
-function status(request, response) {
-    console.log('Data base:', database);
-    response.status(200).json({key: "go ahead!!"})
+async function status(request, response) {
+    const updatedAt = new Date().toISOString();
+
+    response.status(200).json({
+        updated_at: updatedAt,
+    })
 }
 
 export default status;

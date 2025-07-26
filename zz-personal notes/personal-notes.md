@@ -65,4 +65,9 @@ export function log(message) {
 ### `URL Path versioning, Hearder Versioning`
 for API update.
 
+### `DotEnv`
 
+### `Remover dados confidenciais de um repositório`
+https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+
+### `Absolute imports e baseURL`
