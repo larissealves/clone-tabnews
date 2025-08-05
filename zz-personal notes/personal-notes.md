@@ -78,3 +78,14 @@ for API update.
 https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 
 ### `Absolute imports e baseURL`
+
+### `Query: sem parâmetros, parâmetros fixos e parâmetros dinâmicos`
+
+🌐 O que é fetch?
+fetch é uma função JavaScript usada para fazer requisições HTTP — ou seja, é o jeito moderno de buscar dados de uma API, enviar dados, etc.
+📦 Para que serve o fetch?
+Situação	O que o fetch faz
+Buscar dados de uma API	GET requests
+Enviar dados para um servidor	POST requests
+Atualizar ou deletar recursos	PUT / DELETE
+Verificar status de uma aplicação (/status)	GET simples

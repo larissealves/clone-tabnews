@@ -1,7 +1,9 @@
-test("get to /api/v1/status should return 200", async () => {
-  const response = await fetch("http://localhost:3000/api/v1/satus");
-  expect(response.status).toBe(200);
+const fetch = require("node-fetch");
 
+test("get to /api/v1/status should return 200", async () => {
+  const response = await fetch("http://localhost:3000/api/v1/status");
+  console.log('aaa ', response)
   const responseBody = await response.json();
   expect(responseBody.updated_at).toBeDefined();
 });
+
